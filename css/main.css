@@ -13,6 +13,8 @@ body {
     padding: 0;
     display: flex;
     flex: auto;
+    height: 100vh;
+
     flex-direction: column;
     align-items: center;
     align-content: center;
@@ -20,25 +22,36 @@ body {
     gap: 1em;
 }
 
+main {
+    flex: 1 0 auto;
+}
+
 header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
+    flex-shrink: 0;
 
     box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.2);
 }
+
+header>p {
+    padding: 1em;
+}
+
 nav {
     display: flex;
     flex-direction: row;
 }
-nav > * {
+
+nav>* {
     padding: 1em;
 }
 
 h1 {
     text-align: center;
-
+    padding: 1em;
 }
 
 div {
@@ -48,4 +61,9 @@ div {
 
 p {
     text-align: center;
+}
+
+footer {
+    height: 2em;
+    flex-shrink: 0;
 }
