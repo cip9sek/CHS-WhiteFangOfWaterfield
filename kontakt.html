@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="stylesheet" href="css/mobileMenu.css">-->
+    <link rel="stylesheet" href="css/mobileMenu.css">
     <title>Document</title>
 </head>
+
 <body>
-    
-    <script src="javascript.js"></script>
+
+    <script src="js/menuFunction.js"></script>
     <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <button onclick="menuFunction()" class="dropbtn">
+            <svg xmlns="http://www.w3.org/2000/svg">
+                <path d="M20,7H4C2.9,7,2,6.1,2,5s0.9-2,2-2h16c1.1,0,2,0.9,2,2S21.1,7,20,7z"></path>
+                <path d="M20,21H4c-1.1,0-2-0.9-2-2s0.9-2,2-2h16c1.1,0,2,0.9,2,2S21.1,21,20,21z"></path>
+                <path d="M20,14H4c-1.1,0-2-0.9-2-2s0.9-2,2-2h16c1.1,0,2,0.9,2,2S21.1,14,20,14z" opacity=".35"></path>
+            </svg>
+        </button>
         <div id="myDropdown" class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
         </div>
-      </div>
+    </div>
+
+
 
 
 
 </body>
+
 </html>
