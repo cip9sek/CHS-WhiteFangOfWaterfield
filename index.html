@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--<link rel="stylesheet" href="css/main.css" />-->
     <link rel="stylesheet" href="css/header.css" />
+    
     <title>Document</title>
 </head>
 
@@ -19,6 +20,8 @@
             <path d="M20,14H4c-1.1,0-2-0.9-2-2s0.9-2,2-2h16c1.1,0,2,0.9,2,2S21.1,14,20,14z" opacity=".35"></path>
             <rect class="btn" x="0" y="0" width="25" height="25" onclick="toggleMenu()" />
         </svg>
+        <script src="js/menuFunction.js" defer></script> <!-- defer means that 
+        the script will be downloaded and not executet straight after loading the site -->
 
         <div id="dropdownMenu">
 
@@ -27,14 +30,7 @@
 
         </div>
 
-        <script>
-            let subMenu = document.getElementById("dropdownMenu");
-
-            function toggleMenu() {
-                subMenu.classList.toggle("open-menu");
-                alert("function is on");
-            }
-        </script>
+    
         <!--<nav>
             <a href="">Psychologické poradentsví</a>
             <a href="">Pletení košíků</a>
