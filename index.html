@@ -2,21 +2,39 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/header.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<link rel="stylesheet" href="css/main.css" />-->
+    <link rel="stylesheet" href="css/header.css" />
     <title>Document</title>
 </head>
 
 <body>
     <header>
         <a href="index.html">Mgr. Zuzana Kovaříková</a>
+
         <svg xmlns="http://www.w3.org/2000/svg">
             <path d="M20,7H4C2.9,7,2,6.1,2,5s0.9-2,2-2h16c1.1,0,2,0.9,2,2S21.1,7,20,7z"></path>
             <path d="M20,21H4c-1.1,0-2-0.9-2-2s0.9-2,2-2h16c1.1,0,2,0.9,2,2S21.1,21,20,21z"></path>
             <path d="M20,14H4c-1.1,0-2-0.9-2-2s0.9-2,2-2h16c1.1,0,2,0.9,2,2S21.1,14,20,14z" opacity=".35"></path>
+            <rect class="btn" x="0" y="0" width="25" height="25" onclick="toggleMenu()" />
         </svg>
+
+        <div id="dropdownMenu">
+
+            <a href="kontakt.html">Kontakt</a>
+            <a href="CHS.html">CHS</a>
+
+        </div>
+
+        <script>
+            let subMenu = document.getElementById("dropdownMenu");
+
+            function toggleMenu() {
+                subMenu.classList.toggle("open-menu");
+                alert("function is on");
+            }
+        </script>
         <!--<nav>
             <a href="">Psychologické poradentsví</a>
             <a href="">Pletení košíků</a>
@@ -29,12 +47,12 @@
         <h1>Tyto webové stránky informují o třech oblastech mojí činnosti.</h1>
 
         <div>
-            <img src="res/indexUvod.jpg" alt="" id="indexUvod">
+            <img src="res/indexUvod.jpg" alt="" id="indexUvod" />
         </div>
 
         <p>
-            Můžete zde najít informace o psychologickém poradenství, košíkářských kurzech i chovné stanici zlatých
-            retrívrů
+            Můžete zde najít informace o psychologickém poradenství, košíkářských
+            kurzech i chovné stanici zlatých retrívrů
         </p>
     </main>
 
