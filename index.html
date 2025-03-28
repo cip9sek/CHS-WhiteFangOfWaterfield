@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--<link rel="stylesheet" href="css/main.css" />-->
     <link rel="stylesheet" href="css/header.css" />
-    
+    <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
 
@@ -14,29 +14,21 @@
     <header>
         <a href="index.html">Mgr. Zuzana Kovaříková</a>
 
-        <svg xmlns="http://www.w3.org/2000/svg">
+        <svg xmlns="http://www.w3.org/2000/svg" id="menuSVG">
             <path d="M20,7H4C2.9,7,2,6.1,2,5s0.9-2,2-2h16c1.1,0,2,0.9,2,2S21.1,7,20,7z"></path>
             <path d="M20,21H4c-1.1,0-2-0.9-2-2s0.9-2,2-2h16c1.1,0,2,0.9,2,2S21.1,21,20,21z"></path>
             <path d="M20,14H4c-1.1,0-2-0.9-2-2s0.9-2,2-2h16c1.1,0,2,0.9,2,2S21.1,14,20,14z" opacity=".35"></path>
-            <rect class="btn" x="0" y="0" width="25" height="25" onclick="toggleMenu()" />
+            <rect class="menuBtn" x="0" y="0" width="25" height="25" onclick="toggleMenu()" />
         </svg>
         <script src="js/menuFunction.js" defer></script> <!-- defer means that 
         the script will be downloaded and not executet straight after loading the site -->
 
-        <div id="dropdownMenu">
-
-            <a href="kontakt.html">Kontakt</a>
-            <a href="CHS.html">CHS</a>
-
-        </div>
-
-    
-        <!--<nav>
+        <nav id="dropdownMenu">
             <a href="">Psychologické poradentsví</a>
             <a href="">Pletení košíků</a>
             <a href="CHS.html">Chovná stanice White Fang of Waterfield</a>
             <a href="kontakt.html">Kontakt</a>
-        </nav>-->
+        </nav>
     </header>
 
     <main>
