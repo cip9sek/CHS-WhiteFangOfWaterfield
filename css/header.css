@@ -4,9 +4,11 @@
 }
 
 header {
-    
-    display: inline;
-    align-items: center;
+    display: flex;
+    justify-content: space-between; /* Push items to opposite ends */
+    align-items: center; /* Center elements vertically */
+    padding: 0.5em;
+
     background-color: var(--headerBackgroundColor);
     box-shadow: 3px 3px 15px 0px rgb(224, 218, 218);
 }
@@ -14,6 +16,7 @@ header {
 a {
     text-decoration: none;
     color: black;
+    transition: opacity 0.3s ease-in-out;
 }
 
 a:hover {
@@ -21,6 +24,7 @@ a:hover {
 }
 
 #title {
+    margin: 0;
     font-size: larger;
     max-width: 70vw;
 }
@@ -55,13 +59,14 @@ a:hover {
     right: 2%;
     overflow: hidden;
     max-height: 0px;
-    background-color: rgb(250, 250, 250);
+    background-color: white;
     border-radius: 10px;
-    box-shadow: 10px, 10px, 10px , black;
+    
 }
 
 #dropdownMenu.open-menu {
     max-height: 400px;
+    box-shadow: 5px 5px 10px rgb(231, 230, 230);
 }
 
 @media only screen and (min-width: 700px){
