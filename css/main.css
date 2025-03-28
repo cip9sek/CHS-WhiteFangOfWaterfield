@@ -68,9 +68,10 @@ nav>* {
     padding: 1em 0.5em 1em 0.5em;
 }
 
-h1 {
+h2 {
     text-align: center;
     padding: 1em;
+    font-size: larger;
 }
 
 div {
