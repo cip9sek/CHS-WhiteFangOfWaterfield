@@ -43,40 +43,14 @@ main {
 
 main > div {
     align-items: center;
-}
-
-header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    flex-shrink: 0;
-
-    /*box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.2);*/
-}
-
-header > a {
-    padding: 1em;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-}
-
-nav>* {
-    padding: 1em 0.5em 1em 0.5em;
+    flex-direction: column;
 }
 
 h2 {
     text-align: center;
     padding: 1em;
     font-size: larger;
-}
-
-div {
-    display: flex;
-    flex-direction: column;
 }
 
 p {

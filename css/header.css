@@ -4,13 +4,14 @@
 }
 
 header {
+    width: 100%;
     display: flex;
     justify-content: space-between; /* Push items to opposite ends */
     align-items: center; /* Center elements vertically */
-    padding: 0.5em;
+    padding: 1em;
 
     background-color: var(--headerBackgroundColor);
-    box-shadow: 3px 3px 15px 0px rgb(224, 218, 218);
+    box-shadow: 1px 1px 5px 0px rgb(224, 218, 218);
 }
 
 a {
@@ -32,8 +33,6 @@ a:hover {
 #menuSVG {
     width: 1.6em;
     height: 1.6em;
-    position: absolute;
-    right: 1.6em;
 }
 
 .menuBtn {
@@ -51,7 +50,6 @@ a:hover {
 #dropdownMenu {
     display: flex;
     flex-direction: column;
-    gap: 1em;
     width: auto;
     height: auto;
     position: absolute;
@@ -61,12 +59,14 @@ a:hover {
     max-height: 0px;
     background-color: white;
     border-radius: 10px;
-    
+}
+#dropdownMenu > * {
+    padding: 1em;
 }
 
 #dropdownMenu.open-menu {
     max-height: 400px;
-    box-shadow: 5px 5px 10px rgb(231, 230, 230);
+    box-shadow: 3px 3px 8px rgb(216, 216, 216);
 }
 
 @media only screen and (min-width: 700px){
