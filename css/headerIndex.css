@@ -4,6 +4,9 @@
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     display: flex;
     justify-content: space-between; /* Push items to opposite ends */
@@ -12,6 +15,7 @@ header {
 
     background-color: var(--headerBackgroundColor);
     box-shadow: 1px 1px 5px 0px rgb(224, 218, 218);
+    text-align: center;
 }
 
 a {
@@ -21,7 +25,7 @@ a {
 }
 
 a:hover {
-    opacity: 0.7;
+    opacity: 0.3;
 }
 
 #title {
@@ -59,6 +63,7 @@ a:hover {
     max-height: 0px;
     background-color: white;
     border-radius: 10px;
+    transition: 0.3s;
 }
 #dropdownMenu > * {
     padding: 1em;
@@ -69,10 +74,9 @@ a:hover {
     box-shadow: 3px 3px 8px rgb(216, 216, 216);
 }
 
-@media only screen and (min-width: 700px){
+@media only screen and (min-width: 800px){
     header {
         display: flex;
-
     }
 
     #menuSVG {
