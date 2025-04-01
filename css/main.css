@@ -22,10 +22,8 @@
 body {
     margin: 0;
     padding: 0;
-    padding-top: 100px;
     display: flex;
     flex: auto;
-    height: 100vh;
 
     flex-direction: column;
     align-items: center;
@@ -35,6 +33,9 @@ body {
 }
 
 main {
+    margin-top: 1em;
+    padding: 1em;
+    border-top:  1px black solid;
     display: flex;
     flex-direction: column;
     justify-content: center;
