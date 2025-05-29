@@ -17,18 +17,17 @@
     /*width: 40%;
     min-width: 10em;
     max-width: 25em;*/
-    display: block;
+
     width: 100%;
     max-width: 25em;
-    margin: 2em auto;
+    margin: 2em;
 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 25px;
 }
 
 
-html,
-body {
+html, body {
     height: 100%;
 }
 
@@ -47,8 +46,7 @@ main {
     justify-content: center;
     align-content: center;
     flex: 1;
-    margin-top: 10%;
-    
+    margin-top: 3em;
     height: 100%;
 }
 
@@ -71,6 +69,7 @@ p {
 
 @media only screen and (min-width: 800px) {
     #indexMainDiv {
+        align-self: center;
         display: flex;
         flex-direction: row;
         justify-content: center;
