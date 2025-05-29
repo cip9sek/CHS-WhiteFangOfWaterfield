@@ -12,34 +12,32 @@
     /*font-family: "Open Sans", sans-serif;*/
     font-family: "Poppins", sans-serif;
 }
-
+ 
 #indexUvod {
     width: 40%;
     min-width: 4em;
     margin: 2em;
 }
 
+html, body {
+    height: 100%;
+}
 body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex: auto;
-
     flex-direction: column;
-    align-items: center;
-    align-content: center;
-
-    gap: 1em;
 }
 
 main {
-    padding: 1em;
+    padding: 0 1em;
     
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    flex: 1 0 auto;
+    flex: 1;
+    height: 100%;
 }
 
 main > div {
@@ -56,9 +54,4 @@ h2 {
 
 p {
     text-align: center;
-}
-
-footer {
-    height: 2em;
-    flex-shrink: 0;
 }
