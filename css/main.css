@@ -12,16 +12,26 @@
     /*font-family: "Open Sans", sans-serif;*/
     font-family: "Poppins", sans-serif;
 }
- 
-#indexUvod {
-    width: 40%;
-    min-width: 4em;
-    margin: 2em;
+
+#imageIndexUvod {
+    /*width: 40%;
+    min-width: 10em;
+    max-width: 25em;*/
+    display: block;
+    width: 100%;
+    max-width: 25em;
+    margin: 2em auto;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
 }
 
-html, body {
+
+html,
+body {
     height: 100%;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -31,12 +41,14 @@ body {
 
 main {
     padding: 0 1em;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     flex: 1;
+    margin-top: 10%;
+    
     height: 100%;
 }
 
@@ -54,4 +66,15 @@ h2 {
 
 p {
     text-align: center;
+}
+
+
+@media only screen and (min-width: 800px) {
+    #indexMainDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    main {}
 }

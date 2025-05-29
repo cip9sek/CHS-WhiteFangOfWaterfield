@@ -1,3 +1,32 @@
 https://www.youtube.com/watch?v=ybXulmeilFM
 
 https://www.youtube.com/watch?v=0YFrGy_mzjY
+
+
+1. Visual Hierarchy & Layout
+
+    Separate the content areas more clearly: The site covers three distinct topics—psychological counseling, basket weaving, and a golden retriever kennel. Consider using visual blocks or cards for each area with icons or images to help users quickly identify what they’re looking for.
+    Use whitespace more effectively: Adding padding and margins around text and images can make the content easier to read and more visually appealing.
+
+2. Navigation Improvements
+
+    Highlight the active section in the navigation bar so users know where they are.
+    Consider using a dropdown or mega menu if more subpages are added in the future, especially if each area expands.
+
+3. Typography & Readability
+
+    Use larger font sizes and clearer headings to improve readability.
+    Consider a more modern font pairing (e.g., a serif for headings and a sans-serif for body text) to enhance the aesthetic.
+
+4. Visual Design
+
+    The image of the dogs is charming, but it might be more effective as part of a rotating banner or gallery that showcases all three areas of work.
+    Add consistent color themes for each section (e.g., calming tones for counseling, earthy tones for basketry, natural tones for the kennel).
+
+5. Mobile Responsiveness
+
+    Ensure the site is fully responsive—elements should stack vertically and remain legible on smaller screens.
+
+6. Call to Action (CTA)
+
+    Add clear CTAs like “Book a Session,” “Join a Course,” or “Meet the Dogs” to guide users toward taking action.
