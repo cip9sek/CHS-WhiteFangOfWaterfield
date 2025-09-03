@@ -26,8 +26,6 @@
     border-radius: 25px;
 }
 
-
-
 html,
 body {
     height: 100%;
@@ -41,7 +39,7 @@ body {
 }
 
 main {
-    padding: 0 1em;
+    padding: 0 2em;
 
     display: flex;
     flex-direction: column;
@@ -83,10 +81,10 @@ p {
 .indexSectionDiv {
     background-color: rgb(252, 248, 248);
     /*height: 10em;*/
-    width: 95%;
+    width: 70%;
     box-shadow: 0 4px 12px rgba(109, 109, 109, 0.2);
     border-radius: 25px;
-    padding: 0.7em;
+    padding: 1em;
 
     display: flex;
     flex-direction: column;
@@ -95,7 +93,7 @@ p {
 }
 .indexSectionDiv > img {
     width: 40%;
-    margin: 2%;
+    margin: 1em;
     border-radius: 25px;
     max-width: 15em;
 }
@@ -105,7 +103,13 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1em;
+    flex-grow: 1;
 }
+
+#imgKosikyNahledovka {
+     order: 2;
+    }
 
 
 @media only screen and (min-width: 800px) {
@@ -120,7 +124,7 @@ p {
         flex-direction: row;
     }
 
-    .indexSectionTextDiv {
-    
+    #imgKosikyNahledovka {
+     order: -1;
     }
 }
