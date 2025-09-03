@@ -27,7 +27,9 @@
 }
 
 
-html, body {
+
+html,
+body {
     height: 100%;
 }
 
@@ -44,13 +46,13 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
-    flex: 1;
+    align-items: center;
+    /*flex: 1;*/
     margin-top: 3em;
     height: 100%;
 }
 
-main > div {
+main>div {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -66,6 +68,45 @@ p {
     text-align: center;
 }
 
+.indexInfoSection {
+    margin: 10% 0 10% 0;
+    padding: 10% 0 10% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0px 1px 100px rgba(109, 109, 109, 0.1);
+}
+
+.indexSectionDiv {
+    background-color: rgb(252, 248, 248);
+    /*height: 10em;*/
+    width: 95%;
+    box-shadow: 0 4px 12px rgba(109, 109, 109, 0.2);
+    border-radius: 25px;
+    padding: 0.7em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.indexSectionDiv > img {
+    width: 40%;
+    margin: 2%;
+    border-radius: 25px;
+    max-width: 15em;
+}
+
+.indexSectionTextDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @media only screen and (min-width: 800px) {
     #indexMainDiv {
@@ -75,5 +116,11 @@ p {
         justify-content: center;
     }
 
-    main {}
+    .indexSectionDiv {
+        flex-direction: row;
+    }
+
+    .indexSectionTextDiv {
+    
+    }
 }
