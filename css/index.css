@@ -91,12 +91,24 @@ p {
     justify-content: center;
     align-items: center;
 }
+
 .indexSectionDiv > img {
     width: 40%;
     margin: 1em;
     border-radius: 25px;
     max-width: 15em;
 }
+
+.indexSectionDiv > a {
+    width: 40%;
+    margin: 1em;
+    max-width: 15em;
+}
+.indexSectionDiv > a > img {
+    width: 100%;
+    border-radius: 25px;
+}
+
 
 .indexSectionTextDiv {
     display: flex;
