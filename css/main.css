@@ -24,14 +24,15 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*flex: 1;*/
-    margin-top: 4em;
+    flex: 1;
+    margin-top: 1em;
 }
 
 main > div {
@@ -52,20 +53,10 @@ p {
 
 
 /*----CHS----*/
-#oNasText {
-    padding: 1em;
-    align-self: flex-start;
-    display: flex;
-    align-items: start;
-    
-}
-#oNasText > p {
-    text-align: left;
-}
 
 #CHSMainImg {
     width: 100%;
-    
+    max-height: 60em;
     object-fit: cover;
     object-position: top;
 }
@@ -82,7 +73,6 @@ p {
     width: 15em;
     aspect-ratio: 0.8;
     text-align: center;
-    background-image:url(../res/indexUvod.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 60px;
@@ -91,24 +81,153 @@ p {
     justify-content: center;
     align-items: center;
 }
+
+#CHSMainSection_oNas {
+    background-image:url(../res/indexUvod.jpg);
+}
 #CHSMainSection_oNas > a {
     align-self:flex-end;
-    margin-left: 2em;
-    color: antiquewhite;
-    padding: 1em;
+    color: white;
+    background-color: rgba(0, 0,    0, 0.2);
+    margin: 1em;
+    padding: 0px 4px ;
+    border-radius: 10px;
+}
+
+#CHSMainSection_nasiPsi {
+    background-image:url(../res/CHSArwenAAshley.jpg);
 }
 #CHSMainSection_nasiPsi > a {
-    color: yellow;
     align-self: flex-start;
-    padding: 1em;
+    color: white;
+    background-color: rgba(0, 0,    0, 0.2);
+    margin: 1em;
+    padding: 0px 4px ;
+    border-radius: 10px;
+}
+
+#CHSMainSection_vrhy {
+    background-image:url(../res/CHSVrhy.JPG);
 }
 #CHSMainSection_vrhy > a {
     color: rgb(26, 241, 26);
+    align-self: flex-end;
     background-color: rgba(0, 0,    0, 0.2);
+    margin: 1em;
+    padding: 0px 4px ;
+    border-radius: 10px;
 }
 
 
-@media only screen and (min-width: 800px) {
+
+/* ------- O nas ------- */
+
+#oNasMain {
+    width: 90%;
+    justify-content: center; 
+    align-items: center;
+}
+
+#imgONas {
+    width: 100%;
+    border-radius: 10px;
+    margin: 1em;
+} 
+
+#oNasText {
+    display: flex;
+    align-items: start;
+    
+}
+#oNasText > p {
+    text-align: left;
+}
+
+
+/* ------- Nasi Psi --------- */
+
+#mainNasiPsi {
+    margin-top: 1em;
+}
+
+#mainNasiPsi > h2 {
+    margin: 3em 0em;
+    margin-top: 0em;
+}
+
+#mainNasiPsi > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+
+    width: 90%;
+}
+
+#mainNasiPsi > section > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: ce;
+    gap: 1em;
+}
+
+#mainNasiPsi > section  > img {
+    width: 30em;
+    border-radius: 20px;
+}
+
+#mainNasiPsi > section > div > h3 {
+    padding: 1em;
+}
+
+#mainNasiPsi > section > div > p {
+    text-align: left;
+}
+
+#mainNasiPsi > section > div > ul {}
+
+/*-------- Vrhy --------*/
+
+#mainVrhy {
+    gap: 1em;
+    width: 100%;
+}
+
+#mainVrhy > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1em;
+    width: 100%;
+}
+
+#mainVrhy > section > p {
+    text-align: left;
+}
+
+
+#sectionVrhA {}
+#sectionVrhA > div  {
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em 2em;
+}
+
+#sectionVrhA > div > img {
+    width: 80%;
+    min-width: 20em;
+    aspect-ratio: 1.5;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+@media only screen and (min-width: 900px) {
     #indexMainDiv {
         align-self: center;
         display: flex;
@@ -116,8 +235,30 @@ p {
         justify-content: center;
     }
 
-    #oNasText {
-        padding: 5em;
+    #oNasMain {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 
+    #imgONas {
+    width: 70%;
+    border-radius: 10px;
+    margin: 1em;
+    } 
+
+    #mainNasiPsi > section {
+        flex-direction: row;
+        margin-top: 3em;
+    }    
+
+    #oNasText {
+    width: 70%;
+    align-self: center;
+    }
+
+    #sectionVrhA > div > img {
+        width: 40%;
+    }
+    
 }
