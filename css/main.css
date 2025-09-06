@@ -168,12 +168,11 @@ p {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: ce;
     gap: 1em;
 }
 
 #mainNasiPsi > section  > img {
-    width: 30em;
+    width: 100%;
     border-radius: 20px;
 }
 
@@ -220,7 +219,7 @@ p {
 
 #sectionVrhA > div > img {
     width: 80%;
-    min-width: 20em;
+    min-width: 18em;
     aspect-ratio: 1.5;
     object-fit: cover;
     border-radius: 20px;
@@ -251,6 +250,10 @@ p {
         flex-direction: row;
         margin-top: 3em;
     }    
+
+    #mainNasiPsi > section > img  {
+        width: 60%;
+    }
 
     #oNasText {
     width: 70%;
