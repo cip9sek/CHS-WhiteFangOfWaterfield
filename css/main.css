@@ -199,7 +199,7 @@ p {
     justify-content: center;
     align-items: flex-start;
     padding: 1em;
-    width: 100%;
+    width: 80%;
 }
 
 #mainVrhy > section > p {
@@ -207,18 +207,19 @@ p {
 }
 
 
-#sectionVrhA {}
+#sectionVrhA {
+}
 #sectionVrhA > div  {
     margin-top: 2em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1em 2em;
+    gap: 2em 4%;
 }
 
 #sectionVrhA > div > img {
-    width: 80%;
+    width: 100%;
     min-width: 18em;
     aspect-ratio: 1.5;
     object-fit: cover;
@@ -261,7 +262,7 @@ p {
     }
 
     #sectionVrhA > div > img {
-        width: 40%;
+        width: 48%;
     }
     
 }
