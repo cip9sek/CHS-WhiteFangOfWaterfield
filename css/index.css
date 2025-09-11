@@ -65,6 +65,11 @@ main>div {
     flex-direction: column;
 }
 
+#Vitejte {
+    font-size: x-large;
+    padding: 3em;
+}
+
 h2 {
     text-align: center;
     padding: 1em;
