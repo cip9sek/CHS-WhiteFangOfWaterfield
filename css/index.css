@@ -38,6 +38,15 @@ body {
     flex-direction: column;
 }
 
+#mainKontakt {
+    display: flex;
+    justify-content: center;
+}
+#mainKontakt > p {
+    text-align: left;
+    
+}
+
 main {
     padding: 0 2em;
 
